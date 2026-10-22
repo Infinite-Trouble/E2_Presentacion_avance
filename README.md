@@ -15,3 +15,9 @@ Cada instancia en el directorio de `instancias` está nombrada con el formato In
 ```
 
 Por lo que las primeras 5 líneas consisten en la definición de los parámetros $c$, $SL$, $SR$ y $E$ y el conjunto $C^D$ (clientes que pueden ser atendidos por el dron). Es importante notar que las matrices de tiempos de traslado son de tamaño $(c+2)\times (c+2)$, esto debido a que se agrega el depósito al principio y al final de la matriz. Por lo que después de las 5 líneas, vienen $c+2$ líneas definiendo los tiempos de traslado del camión seguidas de otras $c+2$ líneas definiendo los tiempos de traslado del dron. Luego viene una única línea detallando el tamaño del conjunto de posibles caminos que puede hacer el dron $|F|$ y seguido de eso vienen $|F|$ líneas con las tripletas de caminos posibles (separadas por espacios).
+
+
+
+Un tabú search para tener como referencia:
+
+https://github.com/Xavier-MaYiMing/Tabu-Search/blob/main/TS.py
