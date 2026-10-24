@@ -35,7 +35,6 @@ vishualaizer/            Visualizaciones (Python)
 
 ## Parte 1. Compilar y ejecutar el código C++
 
-Necesitas un compilador de C++ con soporte de C++17 (`g++` o `clang++`). En macOS se instala con `xcode-select --install`.
 
 **Paso 1.** Entra a la carpeta del código:
 
