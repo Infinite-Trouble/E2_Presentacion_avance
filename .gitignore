@@ -1,2 +1,11 @@
 *.o
 solver
+*venv/
+traza_TS.cpp
+traza_TS
+__pycache__/
+.DS_Store
+vishualaizer/visualizaciones/manim/images/
+vishualaizer/visualizaciones/manim/texts
+vishualaizer/visualizaciones/manim/**/partial_movie_files/
+*.json

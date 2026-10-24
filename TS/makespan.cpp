@@ -25,7 +25,7 @@ Si llegan juntos el makespan es el del camión.
     }
 
     double t = 0.0, t_lanz = 0.0;
-    for (size_t p = 0; p < sol.ruta_camion.size(); p++) {
+    for (int p = 0; p < (int)sol.ruta_camion.size(); p++) {
         int v = sol.ruta_camion[p];
         if (p > 0) t += d.m_traslado_camion[sol.ruta_camion[p-1]][v];
 

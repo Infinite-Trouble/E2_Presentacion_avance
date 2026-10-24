@@ -1,0 +1,7 @@
+# visualizador.py (imágenes estáticas)
+numpy>=1.20.0
+matplotlib>=3.5.0
+
+# animacion_ts.py (animación / GIF). Probado con manim 0.17.3.
+# Requiere además, a nivel de sistema: ffmpeg, cairo y pango (macOS: brew install ffmpeg cairo pango pkgconf).
+manim>=0.17.3
