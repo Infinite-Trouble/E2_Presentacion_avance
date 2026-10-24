@@ -6,7 +6,7 @@ estruct_data.h | encargado de las estructuras de datos a utilizar
 lectura.cpp | encargado de leer instancias
 sol_inicial.cpp | genera solucion inicial con NN
 makespan.cpp | evalua una solución cualquiera
-TS.cpp | implementación de tabú search para encontrar una mejor solución (por ahora stub)
+TS.cpp | implementación de tabú search para encontrar una mejor solución
 main.cpp | punto de entrada: ejecuta el pipeline completo
 *.h | declaraciones de cada módulo
 
@@ -34,6 +34,8 @@ En esto se considera que el nodo 0 y el nodo N+1 es el depósito, por lo que se 
 
 
 
+
+TS: el único movimiento es introducir una sortie. Se saca un cliente j de la ruta del camión y se lo asigna a un vuelo (i,j,k), con i y k sus vecinos en la ruta. Un vecino es válido si: j es cliente, (i,j,k) está en F, tauDrone[i][j]+tauDrone[j][k] <= E, j no es lanzamiento ni recuperación de otra sortie, y i / k no repiten lanzamiento / recuperación de otra sortie (k de una sortie sí puede ser i de otra). Se elige el mejor vecino no tabú (aspiración si mejora la mejor solución), se marca la sortie como tabú y se actualiza la mejor solución. Termina a las N iteraciones o cuando no quedan vecinos.
 
 2. Pipeline:
     a. lectura 
